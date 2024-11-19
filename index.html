@@ -3,39 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saber más</title>
+    <title>Página UV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #d0ebff; /* Azul claro */
             color: #003366; /* Azul fuerte */
         }
-        a {
-            text-decoration: none;
+        nav {
+            background-color: #003366; /* Azul oscuro */
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
             color: #ffa500; /* Naranja */
+            text-decoration: none;
             font-weight: bold;
         }
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
         section {
             padding: 20px;
-            background-color: white;
+            margin: 10px;
             border-radius: 10px;
+            background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px auto;
-            max-width: 600px;
+        }
+        header {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+        .mascotas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Información de Contacto</h1>
-    <section>
-        <p>Número de teléfono: <strong>272-342-3430</strong></p>
-        <a href="index.html">Regresar a la página principal</a>
+    <nav>
+        <a href="#uv">¿Qué es la UV?</a>
+        <a href="#equipo">Integrantes del equipo</a>
+        <a href="saber-mas.html">Saber más</a>
+        <a href="#mision-vision">Misión y Visión</a>
+    </nav>
+
+    <header>
+        <h1>Bienvenidos a la página de la UV</h1>
+    </header>
+
+    <section id="uv">
+        <h2>¿Qué es la UV?</h2>
+        <img src="https://www.uv.mx/unidadgeneral/files/2012/06/logo-uv.png" alt="Logo de la UV">
+        <p>
+            La Universidad Veracruzana (UV) es una institución pública de educación superior en el estado de Veracruz, México.
+            Fundada en 1944, ofrece programas educativos de calidad, fomenta la investigación y apoya el desarrollo social.
+        </p>
+        <div class="mascotas">
+            <img src="https://www.uv.mx/universo/files/2021/09/Lucio.png" alt="Mascota Lucio">
+            <img src="https://www.uv.mx/universo/files/2021/09/Lis.png" alt="Mascota Lis">
+        </div>
     </section>
+
+    <section id="equipo">
+        <h2>Integrantes del equipo</h2>
+        <ul>
+            <li>Rafael EA</li>
+            <li>Josue LG</li>
+            <li>Jorge LP</li>
+            <li>Jasub TR</li>
+        </ul>
+    </section>
+
+    <section id="mision-vision">
+        <h2>Misión y Visión de la UV</h2>
+        <h3>Misión</h3>
+        <p>
+            La Universidad Veracruzana genera, aplica, difunde y preserva el conocimiento con calidad y responsabilidad social.
+        </p>
+        <h3>Visión</h3>
+        <p>
+            Ser una universidad reconocida por su calidad académica, compromiso con el entorno y su contribución al desarrollo sostenible.
+        </p>
+    </section>
+
+    <footer>
+        <p>Universidad Veracruzana © 2024</p>
+    </footer>
 </body>
 </html>
-
