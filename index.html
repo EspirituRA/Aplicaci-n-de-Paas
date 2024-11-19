@@ -3,48 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>Página UV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #4CAF50, #8BC34A);
+        }
+        nav {
+            background-color: #005c3f;
             color: white;
+            padding: 10px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
+            justify-content: space-around;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #4CAF50;
-            background: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        nav a {
+            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        .button:hover {
-            background: #e7e7e7;
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+        footer {
+            background-color: #005c3f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>¡Bienvenido a mi página!</h1>
-        <p>Espero que disfrutes tu visita. Haz clic en el botón para saber más.</p>
-        <a href="#mas-informacion" class="button">Saber más</a>
-    </div>
+    <nav>
+        <a href="#uv">¿Qué es la UV?</a>
+        <a href="#equipo">Integrantes del equipo</a>
+        <a href="saber-mas.html">Saber más</a>
+        <a href="#mision-vision">Misión y Visión</a>
+    </nav>
+
+    <header>
+        <h1>Bienvenidos a la página de la UV</h1>
+    </header>
+
+    <section id="uv">
+        <h2>¿Qué es la UV?</h2>
+        <img src="https://www.uv.mx/unidadgeneral/files/2012/06/logo-uv.png" alt="Logo de la UV">
+        <p>
+            La Universidad Veracruzana (UV) es una institución pública de educación superior en el estado de Veracruz, México.
+            Fue fundada en 1944 y se caracteriza por ofrecer programas educativos de calidad, fomentar la investigación,
+            promover la cultura y apoyar el desarrollo social de las comunidades.
+        </p>
+    </section>
+
+    <section id="equipo">
+        <h2>Integrantes del equipo</h2>
+        <ul>
+            <li>Rafael EA</li>
+            <li>Josue LG</li>
+            <li>Jorge LP</li>
+            <li>Jasub TR</li>
+        </ul>
+    </section>
+
+    <section id="mision-vision">
+        <h2>Misión y Visión de la UV</h2>
+        <h3>Misión</h3>
+        <p>
+            La Universidad Veracruzana es una institución pública autónoma que tiene como misión generar, aplicar, difundir 
+            y preservar el conocimiento, la cultura y las artes con calidad y responsabilidad social.
+        </p>
+        <h3>Visión</h3>
+        <p>
+            Ser una universidad reconocida por su calidad académica, su compromiso con el entorno y su contribución al 
+            desarrollo sostenible de la sociedad.
+        </p>
+    </section>
+
+    <footer>
+        <p>Universidad Veracruzana © 2024</p>
+    </footer>
 </body>
 </html>
+
